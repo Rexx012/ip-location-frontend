@@ -15,7 +15,7 @@ const LoginPage = () => {
   const [errors, setErrors] = useState({ email: '', password: '' });
   const [apiError, setApiError] = useState('');
 
-  const LOGIN_API = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+  const LOGIN_API = `${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/login`;
   const navigate = useNavigate();
 
   // Email validation regex
